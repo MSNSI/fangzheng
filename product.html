@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<!--
+ * the frame of index
+ * 
+ * @author: yan liu
+ * @version: 2016-05-16 15:32
+ *           Id
+-->
+<head>
+    <!--
+ * the public head file of the project
+ * 
+ * @author: yan liu
+ * @version: 2016-05-16 15:22
+ *           Id
+-->
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="./Public/lib/bootstrap-3.3.5-dist/css/bootstrap.min.css"/><link rel="stylesheet" type="text/css" href="./Public/lib/bootstrap-datepicker-1.6.1-dist/css/bootstrap-datepicker3.min.css"/><link rel="stylesheet" type="text/css" href="./Public/lib/swiper/idangerous.swiper.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/comm.css"/>
+    
+    <!--[if lte IE 9]>
+    <script type="text/javascript" src="./Public/lib/html5shiv-3.7.3/dist/html5shiv-printshiv.min.js"></script><script type="text/javascript" src="./Public/lib/Respond-1.4.2/dest/respond.min.js"></script><script type="text/javascript" src="./Public/lib/jquery-1.12.3.min.js"></script>    <![endif]-->
+
+    <!--[if gt IE 9]><!-->
+    <script type="text/javascript" src="./Public/lib/jquery-2.2.3.min.js"></script>    <!--<![endif]-->
+
+    <!-- js -->
+    <script type="text/javascript" src="./Public/lib/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script><script type="text/javascript" src="./Public/lib/bootstrap-datepicker-1.6.1-dist/js/bootstrap-datepicker.min.js"></script><script type="text/javascript" src="./Public/lib/bootstrap-datepicker-1.6.1-dist/locales/bootstrap-datepicker.zh-CN.min.js"></script><script type="text/javascript" src="./Public/lib/swiper/idangerous.swiper.min.js"></script>
+    <script type="text/javascript" src="./js/comm.js"></script>
+    
+</head>
+
+    
+</head>
+<body>
+
+    <!--
+ * the toolbar login
+ * 
+ * @author: yan liu
+ * @version: 2016-05-16 19:29
+ *           Id
+-->
+<div class="toolbar">
+    <div class="box row">
+        <div class="col-md-3 box-col">
+            <a href="#">
+                <img src="./img/home.png"/>
+                <span>方正中期官网</span>
+            </a>
+        </div>
+        <div class="col-md-9 box-col">
+            <ol class="breadcrumb">
+                <li><a href="#">用户名：李四</a></li>
+                <li><a href="#">资管账号：1303221982</a></li>
+                <li><a href="#">最新净值日期：20160112</a></li>
+                <li><a href="#">修改密码</a></li>
+                <li><a href="#">退出</a></li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <!--
+ * head nav
+ * 
+ * @author: yan liu
+ * @version: 2016-05-16 21:44
+ *           Id
+-->
+<div class="headnav">
+    <div class="box row">
+        <div class="col-md-4 box-col">
+            <a href="./index.html">
+                <img src="./img/logo.jpg"/>
+            </a>
+        </div>
+        <div class="col-md-8 box-col">
+            <nav class="navbar navbar-right">
+                <div class="container">
+                    <!--<div class="collapse navbar-collapse">-->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="./product.html">我的资产</a></li>
+                        <li><a href="./info.html">信息披露</a></li>
+                        <li><a href="./info2.html">特别提示</a></li>
+                        <li><a href="./buy.html">产品申购</a></li>
+                    </ul>
+                    <!--</div>-->
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    <div class="main">
+        <!--
+ * the product table page
+ * 
+ * @author: yan liu
+ * @version: 2016-05-17 13:05
+ *           Id
+-->
+<div class="row box productTable">
+    <div class="col-md-12 box-col">
+        <table class="table table-bordered table-hover">
+            <thead>
+            <tr>
+                <th>产品名称</th>
+                <th>净值</th>
+                <th>累计回报</th>
+                <th>当月涨跌</th>
+                <th>成立日期</th>
+                <th>管理模式</th>
+                <!--<th>详细</th>-->
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>北极星鹏辉1号</td>
+                <td>直接TA出</td>
+                <td>直接TA出</td>
+                <td>需要计算</td>
+                <td>20160428</td>
+                <td>一对多</td>
+                <!--<td><a href="#" class="btn btn-default btn-xs">查看</a></td>-->
+            </tr>
+            <tr>
+                <td>股指日内趋势7号</td>
+                <td>563.21</td>
+                <td>5863.2</td>
+                <td>56.2%</td>
+                <td>20160123</td>
+                <td>一对多</td>
+                <!--<td><a href="#" class="btn btn-default btn-xs">查看</a></td>-->
+            </tr>
+            <tr>
+                <td>水木成长一号</td>
+                <td>623.23</td>
+                <td>2341.32</td>
+                <td>23.34%</td>
+                <td>20160218</td>
+                <td>一对多</td>
+                <!--<td><a href="#" class="btn btn-default btn-xs">查看</a></td>-->
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+        <!--
+ * Description
+ * 
+ * @author: yan liu
+ * @version: 2016-05-17 15:13
+ *           Id
+-->
+<div class="row box productPanel">
+    <div class="col-md-4 box-col proSum">
+        <h2>北极星鹏辉1号</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-left">累计份额盈亏</p>
+            </div>
+            <div class="col-md-6 value">
+                <p class="text-left"><b>2560.32</b></p>
+            </div>
+            <div class="col-md-6">
+                <p class="text-left">累计份额收益率</p>
+            </div>
+            <div class="col-md-6 value">
+                <p class="text-left"><b>59863.10</b></p>
+            </div>
+            <div class="col-md-6">
+                <p class="text-left"></p>
+            </div>
+            <div class="col-md-6 value">
+                <p class="text-left">(基金份额：2000)</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-8 box-col proParam">
+        <h3 class="contentTitle">费用</h3>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="item">份额参考市值（元）</div>
+                <div class="value">6,513,726</div>
+            </div>
+            <div class="col-md-3">
+                <div class="item">当月收益（元）</div>
+                <div class="value">746,046<b>(元)</b></div>
+            </div>
+            <div class="col-md-3">
+                <div class="item">本月收益率</div>
+                <div class="value">56.23%</div>
+            </div>
+            <div class="col-md-3 lastone">
+                <div class="item">累积收益率</div>
+                <div class="value">561.23%</div>
+            </div>
+        </div>
+        <p>稳定高收益，放心理财首选</p>
+    </div>
+</div>
+
+        <div class="row box report">
+            <div class="col-md-12 box-col">
+                <h3 class="contentTitle outTitle">净值曲线</h3>
+                <img src="./img/report.jpg"/>
+            </div>
+        </div>
+
+        <!--
+ * the product info
+ * 
+ * @author: yan liu
+ * @version: 2016-05-17 16:03
+ *           Id
+-->
+<div class="row box productInfo">
+    <div class="col-md-12 box-col">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active">
+                <a href="#aboutPro" aria-controls="aboutPro" role="tab" data-toggle="tab">产品说明</a>
+            </li>
+            <li role="presentation">
+                <a href="#aboutAdmin" aria-controls="aboutAdmin" role="tab" data-toggle="tab">投资经理简介</a>
+            </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="aboutPro">
+                <p>方正中期期货-北极星鹏辉1号资产管理计划于2015年6月5日成立，2016年04月29日该产品预估净值为1.021。</p>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="aboutAdmin">
+                <p>摘要：
+                    1、合成胶及进口胶上涨对天胶利多
+                    2、下游需求有所好转
+                    3、主产国产量增加不一
+                    4、价差分析
+                    5、沪胶底部确立，上涨遇阻
+                    后市展望与操作策略：
+                    4月份沪胶冲高回落，主力合约一度突破13000元整数位。汽车产销形势稳中向好刺激橡胶需求，周边商品普涨带动市场人气，沪胶出现补涨行情。不过，下游企业需求继续增长的空间有限，天胶现货及期货库存都保持在较高水平，橡胶进口也继续增加，胶价反弹之路任重道远。5月份国内外产区将相继开始割胶，供应压力会继续增大。胶价可能重新探底。不过，创新低的可能性不大，毕竟需求形势好转对胶价应有支撑。</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+    </div>
+
+
+
+    <div class="footnav">
+        <div class="box row">
+            <div class="col-md-12 box-col">
+                版权所有：方正中期期货有限公司 客服电话：95571 本网站资讯内容仅供参考，使用前请务必核实，风险自负！
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3>风险提示</h3>
+                                <div class="form-group">
+                                    <textarea class="form-control" readonly="readonly" id="threat"
+                                              rows="9"> 客户（目前仅限个人客户）不需要再到营业部现场，通过互联网即可申请办理开立期货交易编码、资金账户、开通结算银行等业务。客户事先准备好本人身份证、手机、银行借记卡以及配备有摄像头的电脑（如无摄像头，事先准备身份证正、反面照片各一张，图片格式可以为jpg,gif,png,bmp，图片大小不超过10M；近期正面免冠照片，图片文件不超过10M），通过资料报审、开户申请、审核确认三个步骤，只需花费15分钟的时间，即可在线开立资金账户，在客服人员对客户回访成功后客户即可使用账户进行交易。 </textarea>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> 我已阅读并接受此风险提示
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-6 form-horizontal">
+                                <h3>
+                                    <a href="#" class="active">我要登陆</a>
+                                    &nbsp;&nbsp;&nbsp;
+                                    <a href="#">我要注册</a>
+                                </h3>
+                                <div class="form-group">
+                                    <label for="uname" class="col-md-2 control-label">姓 名</label>
+                                    <div class="col-md-10">
+                                        <input class="form-control" id="uname" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="pass" class="col-md-2 control-label">密 码</label>
+                                    <div class="col-md-10">
+                                        <input class="form-control" id="pass" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="code" class="col-md-2 control-label"></label>
+                                    <div class="col-md-10">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"> 记住密码
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="code" class="col-md-2 control-label"></label>
+                                    <div class="col-md-10">
+                                        <a class="btn btn-default btn-block btnReg">登 陆</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="regForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3>风险提示</h3>
+                                <div class="form-group">
+                                    <textarea class="form-control" readonly="readonly" id="threat"
+                                              rows="9"> 客户（目前仅限个人客户）不需要再到营业部现场，通过互联网即可申请办理开立期货交易编码、资金账户、开通结算银行等业务。客户事先准备好本人身份证、手机、银行借记卡以及配备有摄像头的电脑（如无摄像头，事先准备身份证正、反面照片各一张，图片格式可以为jpg,gif,png,bmp，图片大小不超过10M；近期正面免冠照片，图片文件不超过10M），通过资料报审、开户申请、审核确认三个步骤，只需花费15分钟的时间，即可在线开立资金账户，在客服人员对客户回访成功后客户即可使用账户进行交易。 </textarea>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> 我已阅读并接受此风险提示
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-6 form-horizontal">
+                                <h3>
+                                    <a href="#" class="active">我要登陆</a>
+                                    &nbsp;&nbsp;&nbsp;
+                                    <a href="#">我要注册</a>
+                                </h3>
+                                <div class="form-group">
+                                    <label for="username" class="col-md-2 control-label">姓 名</label>
+                                    <div class="col-md-10">
+                                        <input class="form-control" id="username" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="pw" class="col-md-2 control-label">密 码</label>
+                                    <div class="col-md-10">
+                                        <input class="form-control" id="pw" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone" class="col-md-2 control-label">手机号</label>
+                                    <div class="col-md-10">
+                                        <input class="form-control" id="phone" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="code" class="col-md-2 control-label">验证码</label>
+                                    <div class="col-md-5">
+                                        <input class="form-control" id="code" placeholder="">
+                                    </div>
+                                    <div class="col-md-5">
+                                        <a class="btn btn-default btnCode">获取验证码</a>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="code" class="col-md-2 control-label"></label>
+                                    <div class="col-md-10">
+                                        <a class="btn btn-default btn-block btnReg">注 册</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

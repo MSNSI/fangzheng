@@ -1,0 +1,580 @@
+body {
+    background-color: #F0F0F0;
+}
+
+body, body a {
+    text-align: center;
+    margin: 0 auto;
+    font: 14px/1.5 "\5FAE\8F6F\96C5\9ED1", "\5B8B\4F53", Verdana, Arial, Helvetica, sans-serif;
+    color: #A2A2A2;
+    text-decoration: none;
+}
+
+body a:hover {
+    text-decoration: none;
+    color: #5B616F;
+    cursor: pointer;
+}
+
+body a:active, body a:focus {
+    outline: none;
+}
+
+.toolbar {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: #F9F9F9;
+    border-bottom: 1px solid #F4F4F4;
+}
+
+.toolbar a {
+    font-size: 12px;
+}
+
+.toolbar > .box, .headnav > .box, .footnav > .box, .main > .box {
+    width: 1190px;
+    margin: 0 auto;
+    font-size: 12px;
+}
+
+.toolbar .box .box-col, .headnav .box .box-col, .banner .box .box-col, .content .box .box-col, .productTable.box .box-col, .searchTable.box .box-col, .searchForm.box .box-col {
+    text-align: left;
+    padding: 0;
+}
+
+.toolbar .box .breadcrumb, .toolbar .box .breadcrumb .li {
+    height: 40px;
+    line-height: 40px;
+    text-align: right;
+    background: none;
+    padding: 0;
+    margin: 0;
+}
+
+.toolbar .box .breadcrumb > li + li::before {
+    content: ' ';
+}
+
+.footnav {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: #C00000;
+    border-top: 1px solid #F4F4F4;
+    color: #fff;
+}
+
+.headnav {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    background-color: #fff;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.headnav .container {
+    width: auto;
+}
+
+.headnav .box .navbar, .headnav .box .container, .headnav .box .container .nav, .headnav .box .container li {
+    height: 80px;
+    line-height: 80px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    box-shadow: none;
+}
+
+.headnav .box .container li a {
+    height: 80px;
+    line-height: 80px;
+    padding: 0 15px;
+    font-size: 16px;
+    color: #5B616F;
+}
+
+.banner, .banner .box {
+    width: 1190px;
+    height: 300px;
+    padding: 0px;
+    margin: 20px auto 0;
+}
+
+.banner.subBanner, .banner.subBanner .box {
+    height: auto;
+}
+
+.banner .box img {
+    width: 1190px;
+    height: 300px;
+}
+
+.banner.subBanner .box img {
+    height: auto;
+}
+
+.banner .box .swiper-container, .banner .box .swiper-slide {
+    width: 1190px;
+    height: 300px;
+    text-align: center;
+}
+
+.banner .box .pagination {
+    height: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.banner .box .pagination .swiper-pagination-switch {
+    display: inline-block;
+    background: none;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #fff;
+}
+
+.banner .box .pagination .swiper-active-switch {
+    background-color: #fff;
+}
+
+.main, .main > .box {
+    margin: 20px auto 0;
+}
+
+.main .box.productList {
+    border: 1px solid #EBE3E0;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.main .box.productList .box-col {
+    padding: 15px;
+    border-right: 1px solid #EBE3E0;
+    position: relative;
+}
+
+.main .productList .box-col.tagWeek {
+    background: 0 0 no-repeat url('../img/tag_week.jpg');
+}
+
+.main .productList .box-col.tagNew {
+    background: 0 0 no-repeat url('../img/tag_new.jpg');
+}
+
+.main .productList .box-col.tagMonth {
+    background: 0 0 no-repeat url('../img/tag_month.jpg');
+}
+
+.productList .lastone, .productList .box-col.lastone, .main .box.productList .box-col.lastone, .productList .attr.lastone, .productPanel .row .col-md-3.lastone {
+    border: none;
+}
+
+.productList .title {
+    margin-left: 120px;
+    text-align: left;
+}
+
+.productList .title h2 {
+    font-size: 18px;
+    color: #5B616F;
+}
+
+.productList .title h3 {
+    font-size: 13px;
+    margin: 0;
+}
+
+.productList .attrs {
+    padding: 0;
+    margin-top: 35px;
+}
+
+.productList .attr {
+    float: left;
+    border-right: 1px dashed #EBE3E0;
+    list-style-type: none;
+    height: 60px;
+    width: 120px;
+}
+
+.productList .attr .item {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    font-size: 13px;
+    color: #5B616F;
+    display: block;
+}
+
+.productList .attr .value {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 30px;
+    /*font-weight: bold;*/
+    color: #5B616F;
+}
+
+.productList .attr .value.price {
+    color: #EA534B;
+}
+
+.productList .attr .value b {
+    font-size: 13px;
+}
+
+.productList .buy {
+    width: 100%;
+    margin-top: 15px;
+    float: left;
+}
+
+.productList .buy a {
+    width: 160px;
+    height: 40px;
+    background: 0 0 no-repeat url("../img/bt.png");
+    cursor: pointer;
+    float: right;
+}
+
+.productList .buy a:hover {
+    background-image: url('../img/bt_hover.png');
+
+}
+
+.main .leftCol {
+    padding-left: 40px;
+}
+
+.main .content .panel {
+    border-radius: 0;
+    border-color: #ebe3e0;
+    box-shadow: none;
+}
+
+.content .panel .panel-body {
+    font-size: 14px;
+    padding: 20px;
+}
+
+.content .article .panel .panel-body p {
+    text-indent: 2em;
+}
+
+.content .article .panel .panel-body li {
+    line-height: 30px;
+}
+
+.content .weixin .panel .panel-body {
+    background: 210px 0 no-repeat url("../img/weixin_bg.jpg");
+}
+
+.contentTitle {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto 10px;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 5px;
+    color: #5B616F;
+    text-align: left;
+}
+
+.outTitle {
+    border-left: 5px solid #D70C18;
+}
+
+.modal div {
+    text-align: left;
+}
+
+.modal .modal-dialog {
+    margin-top: 150px;
+}
+
+.modal .control-label {
+    padding-left: 0;
+    padding-right: 0;
+    color: #5B616F;
+}
+
+.modal h3, .modal h3 a {
+    font-size: 20px;
+    text-align: left;
+    margin: 0 auto 20px;
+    font-weight: bold;
+}
+
+.modal h3, .modal h3 a.active {
+    color: #5B616F;
+}
+
+.modal .btnCode {
+    background: #ECEAEB;
+}
+
+.modal .btnReg {
+    background: #EF5B51;
+    color: #fff;
+    border: none;
+}
+
+.modal .btnReg:hover {
+    background: #FF4D43;
+}
+
+.modal textarea.form-control {
+    background: none;
+}
+
+.main .productTable {
+    background: #fff;
+    font-size: 14px;
+}
+
+.main .productTable table {
+    margin: 0;
+}
+
+.main .productTable thead th {
+    background: #FAEAEA;
+    border: none;
+    text-align: center;
+    color: #5B616F;
+}
+
+.main .productTable tbody td {
+    text-align: center;
+    vertical-align: middle;
+    border-bottom-style: dashed;
+    line-height: 35px;
+    height: 35px;
+    padding: 0;
+    color: #4d4948;
+}
+
+.productTable td .btn {
+    background: #EF5B51;
+    color: #fff;
+    border: none;
+    text-shadow: none;
+}
+
+.productTable td .btn:hover {
+    background: #FF4D43;
+}
+
+.main .productPanel {
+    background: #fff;
+    border: 1px solid #EBE3E0;
+}
+
+.productPanel .proSum {
+    background: #F2473F;
+    padding: 20px 30px;
+    color: #fff;
+}
+
+.productPanel .proSum h2 {
+    text-align: left;
+    margin: 10px auto 20px;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.productPanel .proSum p {
+    font-size: 20px;
+    line-height: 50px;
+    margin: 0;
+}
+
+.productPanel .proSum .row > div {
+    padding-right: 0;
+}
+
+.productPanel .proSum .row > div.value {
+    padding-left: 0;
+}
+
+.productPanel .proSum p b {
+    font-size: 32px;
+    color: #FEF538;
+}
+
+.productPanel .proParam {
+    padding: 20px;
+}
+
+.productPanel .proParam .row {
+    background: #F4F2F3;
+    margin: 0;
+}
+
+.productPanel .proParam .col-md-3 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-right: 1px dashed #EBE3E0;
+}
+
+.productPanel .proParam .item {
+    height: 20px;
+    line-height: 20px;
+    font-size: 13px;
+    color: #5B616F;
+    margin-bottom: 10px;
+}
+
+.productPanel .proParam .value {
+    height: 40px;
+    line-height: 40px;
+    font-size: 30px;
+    color: #EA534B;
+}
+
+.productPanel .proParam .value b {
+    font-size: 13px;
+}
+
+.productPanel p {
+    text-align: left;
+    font-size: 16px;
+    margin: 20px auto;
+}
+
+.main .report {
+    background: #fff;
+    border: 1px solid #EBE3E0;
+}
+
+.main .report .box-col {
+    padding: 20px;
+}
+
+.main .productInfo {
+    background: #fff;
+    border: 1px solid #EBE3E0;
+    margin-bottom: 20px;
+}
+
+.main .productInfo .box-col {
+    padding: 0;
+}
+
+.productInfo .nav-tabs {
+    background: #F9F9F9;
+}
+
+.productInfo .nav-tabs li a {
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #5B616F;
+    border-radius: 0;
+}
+
+.productInfo .nav-tabs li a:active, .productInfo .nav-tabs li a:focus {
+    outline: none;
+}
+
+.productInfo .nav-tabs li.active a {
+    border-top: 2px solid #D70C18;
+}
+
+.productInfo .tab-content {
+    padding: 20px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.main .formBox {
+    background: #fff;
+    border: 1px solid #EBE3E0;
+    margin-bottom: 20px;
+}
+
+.main .formBox label {
+    color: #5B616F;
+    font-size: 14px;
+}
+
+.main .formBox .box-col {
+    padding: 20px;
+    text-align: left;
+}
+
+.formBox .btnBuy {
+    background: #EF5B51;
+    color: #fff;
+    border: none;
+}
+
+.formBox .btnBuy:hover {
+    background: #FF4D43;
+}
+
+.main .searchTable {
+    background: #fff;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.main .searchTable table {
+    margin: 0;
+}
+
+.main .searchTable thead th {
+    background: #FAEAEA;
+    border: none;
+    text-align: center;
+    color: #5B616F;
+}
+
+.main .searchTable tbody td {
+    text-align: center;
+    vertical-align: middle;
+    border-bottom-style: dashed;
+    line-height: 35px;
+    height: 35px;
+    padding: 0;
+    color: #4d4948;
+}
+
+.main .searchForm {
+    background: #fff;
+    font-size: 14px;
+    margin-bottom: 20px;
+    border: 1px solid #EBE3E0;
+    padding: 20px;
+}
+
+.searchForm .btn {
+    background: #EF5B51;
+    color: #fff;
+    border: none;
+    text-shadow: none;
+}
+
+.searchForm .btn:hover {
+    background: #FF4D43;
+}
+
+.searchForm .formLine {
+    margin-bottom: 10px;
+}
+
+.searchForm .formLine .form-control {
+    width: 200px;
+}
+
+
+
+
